@@ -35,6 +35,7 @@
     }
     .interaction_card .inner {
         flex-direction: column;
+        gap: 20px;
     }
 }
 
