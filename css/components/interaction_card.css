@@ -1,0 +1,29 @@
+
+
+.interaction_card {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.interaction_card .inner {
+    width: 772px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-gradient);
+    /* background-image: url(/images/interact_card.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+}
+
+
+
+

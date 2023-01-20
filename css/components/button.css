@@ -1,0 +1,49 @@
+.btn {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+
+.btn {
+    width: auto;
+    padding: 0 25px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn.small {
+    padding: 7px 15px;
+    font-size: 10px;
+    gap: 6px;
+    height: 26px;
+}
+
+
+.btn.dark {
+    background: var(--white-gradient);
+    color: var(--dark);
+}
+
+
+.btn>i {
+    font-size: 8px;
+    margin-top: 3px;
+}
+
+.btn.small>i {
+    font-size: 6px;
+    margin-top: 2px;
+}
+
+
+
+.btn.primary {
+    background: var(--primary-gradient);
+    color: var(--light);
+}

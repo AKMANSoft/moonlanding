@@ -1,0 +1,105 @@
+.text-primary {
+    color: var(--primary);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-light-70 {
+    color: var(--light-70);
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+
+
+input, input::placeholder {
+    color: var(--light-70);
+}
+
+
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--light);
+}
+
+
+h3.lg {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h3.xlg {
+    font-size: 38px;
+    line-height: 46px;
+}
+
+
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--light-70);
+}
+
+p.lg {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+strong,
+p>strong {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.text-700 {
+    font-weight: 700;
+}
+
+
+
+
+
+i.bold {
+    -webkit-text-stroke: 2px;
+}
+
+i.medium {
+    -webkit-text-stroke: 1px;
+}
+
+i.normal {
+    -webkit-text-stroke: .5px;
+}
