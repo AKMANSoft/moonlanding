@@ -15,6 +15,7 @@
     --max-hor-padding: 60px;
     --primary: #AB4DAB;
     --primary-gradient: linear-gradient(270deg, #AB4DAB 0%, #311431 100%);
+    --primary-gradient-invert: linear-gradient(270deg, #AB4DAB 100%, #311431 50%);
     --half-white-gradient: linear-gradient(270deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 100%);
     --white-gradient: linear-gradient(270deg, #FFFFFF 2.37%, rgba(255, 255, 255, 0.6) 96.84%);
     --yellow-gradient: linear-gradient(211.98deg, #F2C94C 16.2%, #947310 100.33%);

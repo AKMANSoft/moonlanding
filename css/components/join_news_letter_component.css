@@ -25,8 +25,9 @@
 
 
 .join_news_letter_section .content>.input_field {
+    width: 100%;
     margin-top: 50px;
-    width: 440px;
+    max-width: 440px;
     height: 50px;
     background: var(--half-white-gradient);
     border-radius: 40px;
@@ -53,4 +54,18 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
+}
+
+
+
+
+
+@media (max-width:767px) {
+    .join_news_letter_section {
+        padding-top: 50px;
+    }
+
+    .join_news_letter_section .content>.heading {
+        max-width: 200px;
+    }
 }

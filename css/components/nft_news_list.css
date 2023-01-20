@@ -1,0 +1,142 @@
+.nft_news_list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.nft_news_list>.news_item .news_details,
+.nft_news_list .news_item {
+    display: flex;
+}
+
+.nft_news_list .news_item .news_details .title {
+    transition: color .3s ease;
+}
+
+.nft_news_list .news_item:hover>.news_details .title {
+    color: var(--primary);
+}
+
+
+.nft_news_list>.news_item .news_details>.info {
+    display: inline-flex;
+    gap: 10px;
+}
+
+
+
+
+
+/* Nft News List Row View Start */
+
+.nft_news_list {
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.nft_news_list>.news_item {
+    width: 30%;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.nft_news_list>.news_item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+
+
+.nft_news_list>.news_item .news_details {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nft_news_list>.news_item .news_details>.description {
+    display: none;
+}
+
+
+
+
+/* Nft News List Row View End */
+
+
+
+
+
+
+
+
+
+
+/* Nft News List Column View Start */
+
+@media (min-width:768px) {
+    .nft_news_list.column_view {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .nft_news_list.column_view>.news_item {
+        width: 100%;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    .nft_news_list.column_view > .news_item > .image_wrapper {
+        display: block;
+        max-width: 30%;
+    }
+
+    .nft_news_list.column_view>.news_item img {
+        width: 250px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+
+
+    .nft_news_list.column_view>.news_item .news_details {
+        flex-direction: column;
+        gap: 20px;
+        width: 70%;
+    }
+
+    .nft_news_list.column_view>.news_item .news_details>.description {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+
+/* Nft News List Column View End */
+
+
+
+
+
+@media (max-width:767px) {
+    .nft_news_list {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .nft_news_list>.news_item {
+        width: 100%;
+    }
+
+    .nft_news_list.column_view>.news_item {
+        flex-direction: column;
+        width: 100%;
+    }
+}

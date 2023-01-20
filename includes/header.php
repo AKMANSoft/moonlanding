@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="../css/components/header.css">
 <header>
     <div class="header_left">
-        <img src="../images/logo.svg" height="61" width="140" alt="" class="logo">
+        <a href="/">
+            <img src="../images/logo.svg" height="61" width="140" alt="" class="logo">
+        </a>
     </div>
     <div class="header_right">
         <div class="header_menu">
@@ -14,4 +16,5 @@
             <i class="bi bi-chevron-right normal"></i>
         </a>
     </div>
+    <button type="button" class="header_menu_btn"><i class="bi bi-list"></i></button>
 </header>

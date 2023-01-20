@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/components/button.css">
     <link rel="stylesheet" href="./css/components/typography.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/news.css">
 </head>
 
 <body>
@@ -18,9 +18,13 @@
     <section class="home_section">
         <div class="nft_news_list row_view">
             <div class="news_item">
-                <img src="./images/nft_1.png" width="370" height="382" alt="">
+                <a href="#">
+                    <img src="./images/nft_1.png" width="370" height="382" alt="">
+                </a>
                 <div class="news_details">
-                    <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    <a href="#">
+                        <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    </a>
                     <div class="info">
                         <strong class="text-700 uppercase text-primary">Category</strong>
                         <p> - </p>
@@ -30,9 +34,13 @@
                 </div>
             </div>
             <div class="news_item">
-                <img src="./images/nft_2.png" width="370" height="382" alt="">
+                <a href="#">
+                    <img src="./images/nft_2.png" width="370" height="382" alt="">
+                </a>
                 <div class="news_details">
-                    <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    <a href="#">
+                        <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    </a>
                     <div class="info">
                         <strong class="text-700 uppercase text-primary">Category</strong>
                         <p> - </p>
@@ -42,9 +50,13 @@
                 </div>
             </div>
             <div class="news_item">
-                <img src="./images/nft_3.png" width="370" height="382" alt="">
+                <a href="#">
+                    <img src="./images/nft_3.png" width="370" height="382" alt="">
+                </a>
                 <div class="news_details">
-                    <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    <a href="#">
+                        <h3 class="title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                    </a>
                     <div class="info">
                         <strong class="text-700 uppercase text-primary">Category</strong>
                         <p> - </p>
@@ -55,16 +67,19 @@
             </div>
         </div>
     </section>
-    <?php $backgrand_image = "./images/interact_card.png"; include("./includes/interaction_card.php") ?>
+    <?php $backgrand_image = "./images/interact_card.png";
+    include("./includes/interaction_card.php") ?>
 
     <section class="latest_news_section">
         <div class="content">
             <h3 class="heading">Latest News</h3>
             <div class="nft_news_list column_view">
                 <div class="news_item">
-                    <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    <a href="#" class="image_wrapper">
+                        <img src="./images/nft_2.png" width="250" height="250" alt="">
+                    </a>
                     <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
                         <div class="info">
                             <strong class="text-700 uppercase text-primary">Category</strong>
                             <p> - </p>
@@ -74,9 +89,11 @@
                     </div>
                 </div>
                 <div class="news_item">
-                    <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    <a href="#">
+                        <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    </a>
                     <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
                         <div class="info">
                             <strong class="text-700 uppercase text-primary">Category</strong>
                             <p> - </p>
@@ -86,9 +103,11 @@
                     </div>
                 </div>
                 <div class="news_item">
-                    <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    <a href="#">
+                        <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    </a>
                     <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
                         <div class="info">
                             <strong class="text-700 uppercase text-primary">Category</strong>
                             <p> - </p>
@@ -97,23 +116,15 @@
                         <p class="description text-light-70">Excepteur sint occaecat cupidatat non proident sunt Aliquip ex ea commodo consequat duis aute irure dolor in Ut enim ad minim veniam, quis nostrud</p>
                     </div>
                 </div>
-                <?php $backgrand_image = "./images/stars_interact_card.png"; include("./includes/interaction_card.php") ?>
+
+                <?php $backgrand_image = "./images/stars_interact_card.png";
+                include("./includes/interaction_card.php") ?>
                 <div class="news_item">
-                    <img src="./images/nft_2.png" width="250" height="250" alt="">
+                    <a href="#">
+                        <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    </a>
                     <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
-                        <div class="info">
-                            <strong class="text-700 uppercase text-primary">Category</strong>
-                            <p> - </p>
-                            <p>MAY 16, 2022</p>
-                        </div>
-                        <p class="description text-light-70">Excepteur sint occaecat cupidatat non proident sunt Aliquip ex ea commodo consequat duis aute irure dolor in Ut enim ad minim veniam, quis nostrud</p>
-                    </div>
-                </div>
-                <div class="news_item">
-                    <img src="./images/nft_1.png" width="250" height="250" alt="">
-                    <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
                         <div class="info">
                             <strong class="text-700 uppercase text-primary">Category</strong>
                             <p> - </p>
@@ -123,9 +134,25 @@
                     </div>
                 </div>
                 <div class="news_item">
-                    <img src="./images/nft_3.png" width="250" height="250" alt="">
+                    <a href="#">
+                        <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    </a>
                     <div class="news_details">
-                        <h3 class="title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h3>
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
+                        <div class="info">
+                            <strong class="text-700 uppercase text-primary">Category</strong>
+                            <p> - </p>
+                            <p>MAY 16, 2022</p>
+                        </div>
+                        <p class="description text-light-70">Excepteur sint occaecat cupidatat non proident sunt Aliquip ex ea commodo consequat duis aute irure dolor in Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+                <div class="news_item">
+                    <a href="#">
+                        <img src="./images/nft_1.png" width="250" height="250" alt="">
+                    </a>
+                    <div class="news_details">
+                        <a href="#" class="h3 title lg">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a>
                         <div class="info">
                             <strong class="text-700 uppercase text-primary">Category</strong>
                             <p> - </p>

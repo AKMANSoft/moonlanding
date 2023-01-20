@@ -10,6 +10,7 @@
 
 
 .interaction_card .inner {
+    max-width: calc(100vw - (var(--max-hor-padding) * 2));
     width: 772px;
     height: 100%;
     display: flex;
@@ -22,6 +23,19 @@
     background-size: cover;
     background-position: center;
     gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+@media (max-width:767px) {
+    .interaction_card {
+        height: 100%;
+    }
+    .interaction_card .inner {
+        flex-direction: column;
+    }
 }
 
 

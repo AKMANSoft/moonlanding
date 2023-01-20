@@ -1,11 +1,8 @@
+
 .btn {
     text-decoration: none;
     outline: none;
     border: none;
-}
-
-
-.btn {
     width: auto;
     padding: 0 25px;
     height: 46px;
@@ -15,6 +12,8 @@
     display: inline-flex;
     align-items: center;
     gap: 20px;
+    transition: all .4s ease;
+    cursor: pointer;
 }
 
 .btn.small {
@@ -25,9 +24,16 @@
 }
 
 
-.btn.dark {
+
+.btn.light {
     background: var(--white-gradient);
     color: var(--dark);
+}
+
+
+.btn.light:hover {
+    color: var(--light);
+    background: var(--dark);
 }
 
 
@@ -46,4 +52,10 @@
 .btn.primary {
     background: var(--primary-gradient);
     color: var(--light);
+}
+
+
+.btn.primary:hover {
+    color: var(--light);
+    background: var(--primary-gradient-invert);
 }
