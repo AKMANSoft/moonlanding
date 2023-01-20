@@ -7,9 +7,18 @@
     </div>
     <div class="header_right">
         <div class="header_menu">
-            <div class="nav_links">
-                <a href="#" class="nav_link">News <i class="bi bi-chevron-right normal"></i></a>
-            </div>
+            <ul class="nav_links">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">
+                        News <i class="bi bi-chevron-right normal"></i>
+                    </a>
+                    <!-- <ul class="sub_menu">
+                        <li class="nav_item"><a href="#" class="nav_link">News 1</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">News 2</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">News 3</a></li>
+                    </ul> -->
+                </li>
+            </ul>
         </div>
         <a href="#" class="btn primary">
             Marketing Support
