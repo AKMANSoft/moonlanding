@@ -3,7 +3,8 @@
     text-decoration: none;
     outline: none;
     border: none;
-    width: auto;
+    width: max-content;
+    min-width: max-content;
     padding: 0 25px;
     height: 46px;
     font-weight: 700;
@@ -11,7 +12,7 @@
     border-radius: 40px;
     display: inline-flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     transition: all .4s ease;
     cursor: pointer;
 }
@@ -58,4 +59,12 @@
 .btn.primary:hover {
     color: var(--light);
     background: var(--primary-gradient-invert);
+}
+
+
+
+
+.btn.dark {
+    background: var(--half-white-gradient);
+    color: var(--light);
 }

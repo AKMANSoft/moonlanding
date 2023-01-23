@@ -1,0 +1,172 @@
+.nft_projects_list {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.nft_projects_list .nft_project {
+    display: flex;
+}
+
+
+
+
+
+.nft_projects_list .nft_project .project_info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.nft_projects_list .nft_project .project_info .price_line,
+.nft_projects_list .nft_project .project_info .account {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Column View Start  */
+
+
+.nft_projects_list.column_view {
+    flex-direction: column;
+}
+
+
+
+.nft_projects_list.column_view .nft_project {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nft_projects_list.column_view .nft_project .project_info .account {
+    margin-bottom: 20px;
+}
+
+
+.nft_projects_list.column_view .nft_project>.image_wrapper {
+    display: block;
+    width: 100%;
+}
+
+
+.nft_projects_list.column_view .nft_project>.image_wrapper>img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+
+
+/* Column View End  */
+
+
+
+
+
+
+/* Row View Start */
+
+
+
+.nft_projects_list.row_view {
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 40px;
+    justify-content: space-between;
+}
+
+
+.nft_projects_list.row_view .nft_project {
+    gap: 20px;
+    width: 410px;
+    align-items: center;
+}
+
+
+.nft_projects_list.row_view .nft_project .project_info {
+    padding-top: 10px;
+    width: max-content;
+}
+
+
+
+.nft_projects_list.row_view .nft_project .project_info .account {
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 44px;
+}
+
+
+
+
+.nft_projects_list.row_view .nft_project>.image_wrapper {
+    display: block;
+    width: 200px;
+}
+
+
+.nft_projects_list.row_view .nft_project>.image_wrapper>img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+
+@media (max-width:1020px) {
+    .nft_projects_list.row_view .nft_project {
+        width: 350px;
+        gap: 10px;
+    }
+
+    .nft_projects_list.row_view .nft_project .project_info .account {
+        margin-bottom: 20px;
+    }
+
+    .nft_projects_list.row_view .nft_project>.image_wrapper {
+        width: 50%;
+    }
+}
+
+
+@media (max-width:767px) {
+    .nft_projects_list.row_view {
+        width: 100%;
+        column-gap: 0;
+        flex-direction: column;
+    }
+
+    .nft_projects_list.row_view .nft_project {
+        width: 100%;
+        gap: 23px;
+        min-width: none;
+        max-width: none;
+    }
+}
+
+
+/* Row View End */

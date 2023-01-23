@@ -95,11 +95,11 @@
 
     .nft_news_list.column_view > .news_item > .image_wrapper {
         display: block;
-        max-width: 30%;
     }
 
     .nft_news_list.column_view>.news_item img {
-        width: 250px;
+        width: 100%;
+        max-width: 250px;
         height: auto;
         aspect-ratio: 1;
     }
@@ -115,6 +115,15 @@
     .nft_news_list.column_view>.news_item .news_details>.description {
         margin-top: 10px;
         display: block;
+    }
+
+    @media (max-width:900px) {
+        .nft_news_list.column_view>.news_item .news_details {
+            gap: 10px;
+        }
+        .nft_news_list.column_view>.news_item .news_details>.description {
+            margin-top: 0;
+        }
     }
 }
 

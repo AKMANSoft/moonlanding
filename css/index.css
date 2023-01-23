@@ -1,4 +1,5 @@
 @import url(./components/nft_news_list.css);
+@import url(./components/nft_projects_list.css);
 
 
 .home_section {
@@ -16,12 +17,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 80px var(--max-hor-padding);
+    padding: 90px var(--max-hor-padding);
     gap: 50px;
+    align-items: flex-start;
 }
 
 .latest_news_section .content {
-    width: 850px;
+    width: 70%;
+    max-width: 850px;
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +82,8 @@
 
 
 .latest_news_section .pupular_projects_section {
-    width: 395px;
+    width: 30%;
+    max-width: 395px;
     height: 100%;
     background-color: var(--light-10);
     display: flex;
@@ -92,14 +96,75 @@
 
 .latest_news_section .pupular_projects_section > .heading {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 
 
-.nft_projects_list {
-    display: flex;
-    flex-direction: column;
+
+
+@media (max-width: 1400px) {
+    .latest_news_section .pupular_projects_section {
+        padding: 40px 25px;
+    }
 }
+
+
+@media (max-width: 1020px) {
+    .latest_news_section {
+        gap: 20px;
+    }
+    .latest_news_section .pupular_projects_section {
+        padding: 40px 15px;
+    }
+    .latest_news_section .pupular_projects_section {
+        width: 25%;
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .latest_news_section {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .latest_news_section .pupular_projects_section,
+    .latest_news_section .content {
+        width: 100%;
+        max-width: none;
+        padding-left:  var(--max-hor-padding);
+        padding-right:  var(--max-hor-padding);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.most_popular_projects {
+    padding-bottom: 40px;
+}
+
+
 
 
 

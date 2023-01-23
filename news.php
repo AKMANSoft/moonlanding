@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <?php include("./includes/header.php") ?>
+<?php 
+    $news_header = true;
+    $primary_btn_title="Marketing Support"; 
+    include("./includes/header.php") ?>
 
     <section class="home_section">
         <div class="nft_news_list row_view">

@@ -1,15 +1,16 @@
 header {
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 0;
     padding: 0 var(--max-hor-padding);
     width: 100%;
-    height: 60px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    padding-top: 10px;
 }
 
 
@@ -18,7 +19,7 @@ header .header_right {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
     height: 100%;
 }
 
@@ -38,12 +39,14 @@ header .header_right .header_menu .nav_links .nav_item .sub_menu>li.nav_item,
 header .header_right .header_menu .nav_links>li.nav_item {
     list-style: none;
     position: relative;
+    width: 100%;
 }
 
 
 header .header_right .header_menu .nav_links .nav_item .sub_menu .nav_item a.nav_link,
 header .header_right .header_menu .nav_links .nav_item a.nav_link {
     text-decoration: none;
+    width: max-content;
     outline: none;
     border: none;
     height: min-content;
@@ -56,18 +59,17 @@ header .header_right .header_menu .nav_links .nav_item a.nav_link {
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 18px 22px;
+    padding: 18px;
     transition: all .3s ease;
 }
 
 header .header_right .header_menu .nav_links .nav_item .sub_menu>li.nav_item a.nav_link {
     width: 100%;
-}
-
-
-header .header_right .header_menu .nav_links .nav_item .sub_menu .nav_item a.nav_link {
     padding: 10px 22px;
 }
+
+
+
 
 
 header .header_right .header_menu .nav_links .nav_item .sub_menu {
@@ -79,16 +81,17 @@ header .header_right .header_menu .nav_links .nav_item .sub_menu {
     display: none;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.1);
+    background: #110907;
 }
 
 
 
-header .header_right .header_menu .nav_links .nav_item:hover>a.nav_link {
+header .header_right .header_menu .nav_links .nav_item:is(:hover, :active)>a.nav_link {
     background: rgba(255, 255, 255, 0.1);
 }
 
 
-header .header_right .header_menu .nav_links .nav_item:hover>.sub_menu {
+header .header_right .header_menu .nav_links .nav_item:is(:hover, :active)>.sub_menu {
     display: flex;
 }
 
@@ -99,6 +102,7 @@ header .header_right a.nav_link>i {
 }
 
 
+header .header_right>.menu_close_btn,
 header>.header_menu_btn {
     width: 40px;
     height: auto;
@@ -116,12 +120,178 @@ header>.header_menu_btn>i {
     -webkit-text-stroke: 2px;
 }
 
+header .header_right>.menu_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+header .header_right>.menu_close_btn>i {
+    color: var(--light);
+    -webkit-text-stroke: 1px;
+    font-size: 40px;
+}
+
+
+
+header .header_right .search_bar_container {
+    width: 400px;
+    height: 46px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header_right .search_bar_container .search_bar {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+header .header_right .search_bar_container .search_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+header .header_right .search_bar_container .search_bar_expand_btn {
+    display: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--light);
+    width: 45px;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:1400px) {
+    header .header_right .search_bar_container {
+        width: 50px;
+    }
+    header .header_right .search_bar_container .search_bar,
+    header .header_right .search_bar_container .search_btn {
+        display: none;
+    }
+
+    header .header_right .search_bar_container .search_bar_expand_btn {
+        display: block;
+    }
+
+    header .header_right.search_bar_expanded .search_bar_container {
+        width: 400px;
+    }
+
+    header .header_right.search_bar_expanded .header_menu {
+        display: none;
+    }
+
+    header .header_right.search_bar_expanded .search_bar_container .search_bar_expand_btn {
+        display: none;
+    }
+
+    header .header_right.search_bar_expanded .search_bar_container .search_btn,
+    header .header_right.search_bar_expanded .search_bar_container .search_bar {
+        display: block;
+    }
+}
+
+
+@media (max-width:800px) {
+    header .header_right .header_menu .nav_links a {
+        font-size: 14px;
+    }
+
+    header .header_right .header_menu .nav_links .nav_item>a.nav_link {
+        padding: 18px 12px;
+    }
+}
+
+
 
 
 @media (max-width:767px) {
-    header .header_right {
-        display: none;
+
+    header .header_right.active {
+        transform: translateX(0);
+        height: 100vh;
+        width: 100%;
+        background: #110907;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 20px;
+        transition: all .5s ease-in-out;
     }
+
+    header .header_right {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-200%);
+    }
+
+    header .header_right .header_menu {
+        width: 100%;
+    }
+
+    header .header_right>.menu_close_btn {
+        display: block;
+    }
+
+    header .header_right .header_menu .nav_links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .header_right .header_menu .nav_links .nav_item a.nav_link {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    header .header_right .header_menu .nav_links .nav_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header .header_right .header_menu .nav_links .nav_item .sub_menu {
+        position: unset;
+        background: transparent;
+        padding-left: 20px;
+    }
+
+    header .header_right .header_menu .nav_links .nav_item>a.nav_link>i {
+        transition: all .3s ease;
+    }
+
+    header .header_right .header_menu .nav_links .nav_item:is(:hover, :active)>a.nav_link>i {
+        transform: rotateZ(90deg);
+    }
+
+
+
+    header .header_right a.primary_btn {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
 
     header>.header_menu_btn {
         display: block;
