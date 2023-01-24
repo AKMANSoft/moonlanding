@@ -33,7 +33,7 @@
             <div class="featured_nft_card">
                 <img src="images/nft_2.png" width="260" height="260" alt="Nft Image">
                 <div class="account">
-                    <h3 class="title">Cat Fight P2E NFT</h3>
+                    <h4 class="title">Cat Fight P2E NFT</h4>
                     <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
                     <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
                 </div>
