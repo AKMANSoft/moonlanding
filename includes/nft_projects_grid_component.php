@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/css/components/nft_projects_grid_component.css">
 <div class="nft_projects_grid_component">
     <div class="head">
         <h3 class="heading"><?php echo $heading ?></h3>

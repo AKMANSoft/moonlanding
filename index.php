@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonLanding Media</title>
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/components/button.css">
-    <link rel="stylesheet" href="./css/components/typography.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -18,7 +15,7 @@
     $primary_btn_title="Submit Project"; 
     include("./includes/header.php") ?>
 
-    <section class="home_section">
+    <section class="index_page home_section">
         <div class="nft_news_list row_view">
             <div class="news_item">
                 <a href="#">
@@ -73,7 +70,7 @@
     <?php $backgrand_image = "./images/interact_card.png";
     include("./includes/interaction_card.php") ?>
 
-    <section class="latest_news_section">
+    <section class="index_page latest_news_section">
         <div class="content">
             <h3 class="heading">Latest News</h3>
             <div class="nft_news_list column_view">
@@ -254,7 +251,7 @@
         </div>
     </section>
 
-    <section class="most_popular_projects">
+    <section class="index_page most_popular_projects">
         <?php $heading = "Most Popular Projects";
         $btn_title = "View All";
         include("./includes/nft_projects_grid_component.php") ?>

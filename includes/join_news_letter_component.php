@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../css/components/join_news_letter_component.css">
 <section class="join_news_letter_section">
     <div class="content">
         <h3 class="heading xlg text-center">Join our newsletter</h3>

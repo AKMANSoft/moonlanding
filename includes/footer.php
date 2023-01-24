@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../css/components/footer.css">
 <footer>
     <div class="upper_section">
         <a href="/">

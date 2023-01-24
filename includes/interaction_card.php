@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../css/components/interaction_card.css">
 <div class="interaction_card">
     <div class="wrapper">
         <div class="inner" style="background-image: url(<?php echo $backgrand_image ?>);">

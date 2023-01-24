@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../css/components/header.css">
 <header>
     <div class="header_left">
         <a href="/">
