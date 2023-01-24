@@ -187,11 +187,6 @@ header .header_right {
 }
 
 
-@media (min-width:1400px) {
-    header .header_right {
-        margin-right: 50px;
-    }
-}
 
 
 header .header_right .header_menu {
