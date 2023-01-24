@@ -111,6 +111,10 @@ body {
     color: var(--dark);
 }
 
+.btn.light svg path {
+    fill: var(--dark);
+}
+
 
 .btn.light:hover {
     color: var(--light);
@@ -569,7 +573,6 @@ footer .bottom_section .social_icons {
     align-items: center;
     justify-content: center;
     background: var(--primary-gradient);
-    /* background-image: url(/images/interact_card.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -577,6 +580,31 @@ footer .bottom_section .social_icons {
     text-align: center;
     padding: 20px 0;
 }
+
+
+.interaction_card .inner .heading {
+    text-align: center;
+}
+
+
+.interaction_card.large {
+    height: auto;
+}
+
+.interaction_card.large .wrapper {
+    max-width: none;
+    width: 100%;
+}
+
+.interaction_card.large .inner {
+    max-width: none;
+    height: 380px;
+    background-position: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 var(--max-hor-padding);
+}
+
 
 
 
@@ -1144,6 +1172,11 @@ h3.sm {
 }
 
 
+h3.lg {
+    font-size: 38px;
+}
+
+
 
 
 
@@ -1166,9 +1199,10 @@ h4.sm,
 
 
 
+.p,
 strong,
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0em;
@@ -1176,15 +1210,17 @@ p {
     color: var(--light-70);
 }
 
+.p.sm,
 strong.sm,
 p.sm {
     font-size: 14px;
     line-height: 1;
 }
 
+.p>strong,
 strong,
 p>strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -1215,9 +1251,10 @@ p>strong {
         font-size: 26px;
     }
 
+    .p,
     strong,
     p {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -1236,6 +1273,7 @@ p>strong {
         font-size: 20px;
     }
 
+    .p,
     strong,
     p {
         font-size: 14px;
@@ -1250,12 +1288,18 @@ p>strong {
     .h4 {
         font-size: 18px;
     }
+
+    /* strong.sm,
+    p.sm {
+        font-size: 13px;
+    } */
 }
 
 
 
 @media (max-width:767px) {
 
+    .p,
     strong,
     p {
         font-size: 16px;
@@ -1325,6 +1369,22 @@ i.normal {
     margin-top: 60px;
 }
 
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
 .mt-30 {
     margin-top: 30px;
 }
@@ -1374,6 +1434,22 @@ i.normal {
 
 .mb-60 {
     margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-85 {
+    margin-bottom: 85px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
 }
 
 .mb-30 {
@@ -1429,6 +1505,26 @@ i.normal {
 .mv-60 {
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.mv-70 {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.mv-80 {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.mv-85 {
+    margin-bottom: 85px;
+    margin-top: 85px;
+}
+
+.mv-90 {
+    margin-bottom: 90px;
+    margin-top: 90px;
 }
 
 .mv-30 {
@@ -1765,7 +1861,7 @@ i.normal {
 
 
 
-/* Projects Index Page Style Start  */
+/* Projects Page Style Start  */
 
 
 .projects_page.home_section {
@@ -1840,22 +1936,108 @@ i.normal {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    position: relative;
 }
 
-.projects_page.home_section .section_right .featured_nft_card .account {
-    display: flex;
+
+.projects_page.home_section .section_right .featured_nft_card .featured_tag {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    outline: none;
+    border: none;
+    height: 35px;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: var(--primary);
+    border-radius: 0 40px 40px 0;
+    color: var(--light);
+}
+
+
+
+
+.projects_page.home_section .section_right .featured_nft_card .nft_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
     justify-content: center;
 }
 
 
-.projects_page.home_section .section_right .featured_nft_card > img {
+
+.projects_page.home_section .section_right .featured_nft_card .account {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.projects_page.home_section .section_right .featured_nft_card>img {
     width: 260px;
     height: 260px;
     border-radius: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     overflow: hidden;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* Projects Index Page Style End */
+
+.projects_page.home_section .section_right .featured_nft_card>.price_line {
+    outline: none;
+    border: none;
+    background-color: var(--light);
+    border-radius: 30px;
+    padding: 10px 17px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: var(--dark);
+    gap: 13px;
+}
+
+
+.projects_page.home_section .section_right .featured_nft_card>.price_line svg path {
+    fill: var(--dark);
+}
+
+
+
+
+@media (max-width:767px) {
+    .projects_page.home_section {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        padding-bottom: 90px;
+    }
+
+    .projects_page.home_section .section_right,
+    .projects_page.home_section .section_left {
+        width: 100%;
+        max-width: none;
+    }
+
+    .projects_page.home_section .section_left .nft_tags_container {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+/* Projects Page Style End */

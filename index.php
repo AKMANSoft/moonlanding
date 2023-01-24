@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <?php 
+    <?php
     $news_header = false;
-    $primary_btn_title="Submit Project"; 
+    $primary_btn_title = "Submit Project";
     include("./includes/header.php") ?>
 
     <section class="index_page home_section">
@@ -67,7 +67,12 @@
             </div>
         </div>
     </section>
-    <?php $backgrand_image = "./images/interact_card.png";
+
+    <?php
+    $is_large = false;
+    $btn_title = "Learn More";
+    $heading = "Founders: Sellout Your Project";
+    $backgrand_image = "./images/interact_card.png";
     include("./includes/interaction_card.php") ?>
 
     <section class="index_page latest_news_section">
@@ -117,7 +122,11 @@
                     </div>
                 </div>
 
-                <?php $backgrand_image = "./images/stars_interact_card.png";
+                <?php
+                $is_large = false;
+                $btn_title = "Learn More";
+                $heading = "Founders: Sellout Your Project";
+                $backgrand_image = "./images/stars_interact_card.png";
                 include("./includes/interaction_card.php") ?>
                 <div class="news_item">
                     <a href="#" class="image_wrapper">

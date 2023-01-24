@@ -31,24 +31,42 @@
         </div>
         <div class="section_right">
             <div class="featured_nft_card">
+                <button type="button" class="p text-700 text-light featured_tag">Featured</button>
                 <img src="images/nft_2.png" width="260" height="260" alt="Nft Image">
-                <div class="account">
-                    <h4 class="title">Cat Fight P2E NFT</h4>
-                    <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
-                    <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
+                <div class="nft_info">
+                    <div class="account">
+                        <h4 class="title">Cat Fight P2E NFT</h4>
+                        <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
+                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verification_badge">
+                    </div>
+                    <strong class="text-yellow">Coming Soon</strong>
+                    <strong class="text-light-70">Public-sale: 19 Dec 2022</strong>
                 </div>
+                <button type="button" class="price_line">
+                    <custom-svg src="/images/icons/price_icon.svg" width="12" height="20" alt=""></custom-svg>
+                    0.05 ETHERIUM
+                </button>
             </div>
         </div>
     </section>
 
-    <section class="projects_page featured_projects">
+    <section class="mb-80">
         <?php $heading = "Featured Projects";
         $btn_title = "Get Featured";
         include("../includes/nft_projects_grid_component.php") ?>
     </section>
 
+    <?php
+    $is_large = true;
+    $btn_title = "Submit Project";
+    $heading = "Are you a project founder? Do you want to get listed?";
+    $backgrand_image = "/images/stars_interact_card.png";
+    include("../includes/interaction_card.php") ?>
+
     <?php include("../includes/join_news_letter_component.php") ?>
     <?php include("../includes/footer.php") ?>
+
+    <script src="/scripts/components/custom-svg.js"></script>
 </body>
 
 </html>
