@@ -158,10 +158,10 @@ header .header_right .search_bar_container .search_bar {
 
 
 header .header_right .search_bar_container .search_btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -183,6 +183,7 @@ header .header_right .search_bar_container .search_bar_expand_btn {
     header .header_right .search_bar_container {
         width: 50px;
     }
+
     header .header_right .search_bar_container .search_bar,
     header .header_right .search_bar_container .search_btn {
         display: none;
@@ -233,13 +234,6 @@ header .header_right .search_bar_container .search_bar_expand_btn {
 
     header .header_right.active {
         transform: translateX(0);
-        height: 100vh;
-        width: 100%;
-        background: #110907;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 50px 20px;
-        transition: all .5s ease-in-out;
     }
 
     header .header_right {
@@ -247,6 +241,13 @@ header .header_right .search_bar_container .search_bar_expand_btn {
         top: 0;
         left: 0;
         transform: translateX(-200%);
+        height: 100vh;
+        width: 100%;
+        background: #110907;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 20px;
+        transition: all .5s ease-in-out;
     }
 
     header .header_right .header_menu {

@@ -210,7 +210,16 @@ header .header_right .header_menu .nav_links>li.nav_item {
     list-style: none;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+
+
+@media (min-width:768px) {
+
+    header .header_right .header_menu .nav_links .nav_item .sub_menu>li.nav_item,
+    header .header_right .header_menu .nav_links>li.nav_item {
+        height: 100%;
+    }
 }
 
 
@@ -333,6 +342,8 @@ header .header_right .search_bar_container .search_btn {
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.3);
+    min-height: 0;
+    height: 100%;
 }
 
 
@@ -405,13 +416,6 @@ header .header_right .search_bar_container .search_bar_expand_btn {
 
     header .header_right.active {
         transform: translateX(0);
-        height: 100vh;
-        width: 100%;
-        background: #110907;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 50px 20px;
-        transition: all .5s ease-in-out;
     }
 
     header .header_right {
@@ -419,6 +423,13 @@ header .header_right .search_bar_container .search_bar_expand_btn {
         top: 0;
         left: 0;
         transform: translateX(-200%);
+        height: 100vh;
+        width: 100%;
+        background: #110907;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 20px;
+        transition: all .5s ease-in-out;
     }
 
     header .header_right .header_menu {
@@ -437,6 +448,7 @@ header .header_right .search_bar_container .search_bar_expand_btn {
     header .header_right .header_menu .nav_links .nav_item a.nav_link {
         width: 100%;
         justify-content: space-between;
+        height: 50px;
     }
 
 
@@ -859,11 +871,12 @@ footer .bottom_section .social_icons {
         gap: 40px;
     }
 
-    .nft_news_list>.news_item {
+    .nft_news_list .news_item {
         width: 100%;
+        max-width: none;
     }
 
-    .nft_news_list.column_view>.news_item {
+    .nft_news_list.column_view .news_item {
         flex-direction: column;
         width: 100%;
     }
@@ -959,7 +972,6 @@ footer .bottom_section .social_icons {
 .nft_projects_list .nft_project .project_info .account {
     display: flex;
     align-items: center;
-    height: 100%;
     gap: 10px;
     margin-top: 10px;
 }
@@ -1023,7 +1035,7 @@ footer .bottom_section .social_icons {
 
 .nft_projects_list.row_view .nft_project {
     gap: 20px;
-    width: 410px;
+    width: max-content;
     align-items: center;
 }
 
@@ -1031,6 +1043,8 @@ footer .bottom_section .social_icons {
 .nft_projects_list.row_view .nft_project .project_info {
     padding-top: 10px;
     width: max-content;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
@@ -1039,7 +1053,6 @@ footer .bottom_section .social_icons {
     gap: 15px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 44px;
 }
 
 
@@ -1047,7 +1060,8 @@ footer .bottom_section .social_icons {
 
 .nft_projects_list.row_view .nft_project>.image_wrapper {
     display: block;
-    width: 200px;
+    width: 50%;
+    max-width: 200px;
 }
 
 
@@ -1060,12 +1074,13 @@ footer .bottom_section .social_icons {
 
 @media (max-width:1020px) {
     .nft_projects_list.row_view .nft_project {
-        width: 350px;
+        width: max-content;
         gap: 10px;
     }
 
     .nft_projects_list.row_view .nft_project .project_info .account {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        gap: 10px;
     }
 
     .nft_projects_list.row_view .nft_project>.image_wrapper {
@@ -1156,7 +1171,7 @@ a {
 
 
 h1 {
-    font-size: 54px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 0em;
@@ -1214,7 +1229,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
-    color: var(--light-70);
 }
 
 .p.sm,
@@ -1246,7 +1260,7 @@ p>strong {
 
 @media (max-width:1140px) {
     h1 {
-        font-size: 48px;
+        font-size: 46px;
     }
 
     h4.sm,
@@ -1261,7 +1275,7 @@ p>strong {
     .p,
     strong,
     p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -1280,11 +1294,11 @@ p>strong {
         font-size: 20px;
     }
 
-    .p,
+    /* .p,
     strong,
     p {
         font-size: 14px;
-    }
+    } */
 
     h4.sm,
     .h4.sm {
@@ -1305,6 +1319,9 @@ p>strong {
 
 
 @media (max-width:767px) {
+    h1 {
+        font-size: 36px;
+    }
 
     .p,
     strong,
@@ -2006,6 +2023,7 @@ i.normal {
     justify-content: center;
     gap: 20px;
     position: relative;
+    cursor: grab;
 }
 
 
@@ -2155,7 +2173,6 @@ i.normal {
 
 
 
-
 @media (max-width: 767px) {
     .projects_page.browse_by_category_section .categories_list {
         justify-content: center;
@@ -2249,3 +2266,313 @@ i.normal {
 
 
 /* Projects Page Style End */
+
+
+
+
+/* Upcoming Projects Page Style Start */
+
+.upcoming_projects_page.home_section {
+    width: 100%;
+    padding: 0 var(--max-hor-padding);
+    padding-top: 150px;
+    padding-bottom: 190px;
+}
+
+
+.upcoming_projects_page.home_section .head {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #292220;
+}
+
+
+
+
+.upcoming_projects_page.home_section .section_left .filters_tab_toggle_btn {
+    position: fixed;
+    left: calc(200% + 10px);
+    bottom: 20px;
+    outline: none;
+    border: none;
+    background: #110907;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: var(--light);
+    box-shadow: 0 4px 20px rgba(59, 59, 59, 0.3);
+    z-index: 5;
+    display: none;
+}
+
+
+.upcoming_projects_page.home_section .section_left.expanded .filters_tab_toggle_btn>.filter_svg,
+.upcoming_projects_page.home_section .section_left .filters_tab_toggle_btn>.close_svg {
+    display: none;
+}
+
+.upcoming_projects_page.home_section .section_left.expanded .filters_tab_toggle_btn>.close_svg,
+.upcoming_projects_page.home_section .section_left .filters_tab_toggle_btn>.filter_svg {
+    display: block;
+}
+
+
+
+.upcoming_projects_page.home_section .filters_tab_toggle_btn svg path {
+    fill: var(--light);
+}
+
+
+
+
+.upcoming_projects_page.home_section .content {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+
+
+
+.upcoming_projects_page.home_section .section_left {
+    width: 33%;
+}
+
+
+.upcoming_projects_page.home_section .section_left .filter_blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upcoming_projects_page.home_section .section_left .filter_blocks .filter_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+
+
+
+
+.upcoming_projects_page.home_section .categories_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.upcoming_projects_page.home_section .categories_list .category_btn {
+    display: block;
+    height: 40px;
+    min-width: max-content;
+    width: calc(50% - 5px);
+    border-radius: 0px;
+    padding: 0 30px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light);
+    outline: none;
+    border: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    transition: all .3s ease;
+    border-radius: 30px;
+}
+
+.upcoming_projects_page.home_section .categories_list .category_btn:is(:hover, .active) {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+.upcoming_projects_page.home_section .section_right {
+    width: 66%;
+    min-width: 800px;
+}
+
+
+.upcoming_projects_page.home_section .section_right .nft_projects_list.row_view {
+    column-gap: 10px;
+    row-gap: 40px;
+}
+
+
+
+.upcoming_projects_page.home_section .section_right .nft_projects_list.row_view .nft_project {
+    width: calc(50% - 10px);
+}
+
+
+
+
+@media (max-width:900px) {
+    .upcoming_projects_page.home_section .section_left {
+        width: 40%;
+    }
+
+    .upcoming_projects_page.home_section .section_right {
+        width: 60%;
+        min-width: 0;
+    }
+
+    .upcoming_projects_page.home_section .section_right .nft_projects_list.row_view .nft_project {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .upcoming_projects_page.home_section {
+        padding-bottom: 100px;
+    }
+
+    .upcoming_projects_page.home_section .section_left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        transform: translateX(-100%);
+        z-index: 10;
+        background-color: #110907;
+        box-shadow: 3px 1px 16px 0 rgba(43, 43, 43, 0.24);
+        padding: 20px;
+        transition: all .4s ease;
+    }
+
+
+    .upcoming_projects_page.home_section .section_right {
+        width: 100%;
+    }
+
+
+    .upcoming_projects_page.home_section .section_left .filters_tab_toggle_btn {
+        display: block;
+    }
+
+    .upcoming_projects_page.home_section .section_left.expanded {
+        transform: translateX(0);
+    }
+
+    .upcoming_projects_page.home_section .section_left.expanded .filters_tab_toggle_btn {
+        left: calc(100% + 10px);
+    }
+}
+
+
+
+
+/* Upcoming Projects Page Style End */
+
+
+
+
+
+
+
+
+
+
+
+/* Project Submitted Success Page Style Start */
+
+.success_page.home_section {
+    padding: 0 var(--max-hor-padding);
+    padding-top: 160px;
+    min-height: calc(100vh - 280px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.success_page.home_section .heading {
+    margin-bottom: 20px;
+}
+
+
+.success_page.home_section .verification_cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 40px;
+}
+
+
+
+.success_page.home_section .verification_cards .verification_card {
+    width: 400px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+
+.success_page.home_section .verification_cards .verification_card .head {
+    width: 100%;
+    display: inline-flex;
+    padding-bottom: 15px;
+    align-items: center;
+    gap: 11px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.success_page.home_section .verification_cards .verification_card .price {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.success_page.home_section .verification_cards .verification_card ul{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.success_page.home_section .verification_cards .verification_card ul li {
+    list-style-image: url(/images/icons/tick.svg);
+}
+
+
+
+.success_page.home_section .verification_cards .verification_card .btn{
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+    height: 46px;
+}
+
+
+
+
+
+/* Project Submitted Success Page Style End */
