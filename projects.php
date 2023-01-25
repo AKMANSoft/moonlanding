@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - MoonLanding Media</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <?php
     $news_header = false;
     $primary_btn_title = "Submit Project";
-    include("../includes/header.php") ?>
+    include("./includes/header.php") ?>
 
     <section class="projects_page home_section">
         <div class="section_left">
@@ -30,14 +30,14 @@
             </div>
         </div>
         <div class="section_right">
-            <?php include("../includes/featured_nft_card_slider.php") ?>
+            <?php include("./includes/featured_nft_card_slider.php") ?>
         </div>
     </section>
 
     <section class="mb-80">
         <?php $heading = "Featured Projects";
         $btn_title = "Get Featured";
-        include("../includes/nft_projects_grid_component.php") ?>
+        include("./includes/nft_projects_grid_component.php") ?>
     </section>
 
     <?php
@@ -45,7 +45,7 @@
     $btn_title = "Submit Project";
     $heading = "Are you a project founder? Do you want to get listed?";
     $backgrand_image = "/images/interact_card_stars_large.svg";
-    include("../includes/interaction_card.php") ?>
+    include("./includes/interaction_card.php") ?>
 
     <div class="projects_page browse_by_category_section">
         <h4 class="heading">Browse by category</h4>
@@ -67,13 +67,13 @@
     <section class="mt-90">
         <?php $heading = "Most Popular";
         $btn_title = "View All";
-        include("../includes/nft_projects_grid_component.php") ?>
+        include("./includes/nft_projects_grid_component.php") ?>
     </section>
 
     <section class="mt-90 mb-80">
         <?php $heading = "Upcoming";
         $btn_title = "View All";
-        include("../includes/nft_projects_grid_component.php") ?>
+        include("./includes/nft_projects_grid_component.php") ?>
     </section>
 
     <?php
@@ -81,12 +81,12 @@
     $btn_title = "Learn More";
     $heading = "Founders: Sellout Your Project";
     $backgrand_image = "/images/interact_card_large.svg";
-    include("../includes/interaction_card.php") ?>
+    include("./includes/interaction_card.php") ?>
 
     <section class="mt-90 mb-90">
         <?php $heading = "Veerified";
         $btn_title = "View All";
-        include("../includes/nft_projects_grid_component.php") ?>
+        include("./includes/nft_projects_grid_component.php") ?>
     </section>
 
     <?php
@@ -94,7 +94,7 @@
     $btn_title = "Submit Project";
     $heading = "Are you a project founder? Do you want to get listed?";
     $backgrand_image = "/images/interact_card_stars_large.svg";
-    include("../includes/interaction_card.php") ?>
+    include("/includes/interaction_card.php") ?>
 
     <section class="projects_page latest_news_section">
         <h3 class="heading">Latest News</h3>
@@ -119,8 +119,8 @@
     </section>
 
 
-    <?php include("../includes/join_news_letter_component.php") ?>
-    <?php include("../includes/footer.php") ?>
+    <?php include("./includes/join_news_letter_component.php") ?>
+    <?php include("./includes/footer.php") ?>
 
     <script src="/scripts/components/custom-svg.js"></script>
 </body>

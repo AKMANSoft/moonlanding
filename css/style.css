@@ -2141,12 +2141,12 @@ i.normal {
     border: none;
     background: rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
+    transition: all .3s ease;
 }
 
-
-
-
-
+.projects_page.browse_by_category_section .categories_list .category_btn:hover {
+    color: var(--primary);
+}
 
 
 
