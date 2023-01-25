@@ -30,23 +30,7 @@
             </div>
         </div>
         <div class="section_right">
-            <div class="featured_nft_card">
-                <button type="button" class="p text-700 text-light featured_tag">Featured</button>
-                <img src="images/nft_2.png" width="260" height="260" alt="Nft Image">
-                <div class="nft_info">
-                    <div class="account">
-                        <h4 class="title">Cat Fight P2E NFT</h4>
-                        <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
-                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verification_badge">
-                    </div>
-                    <strong class="text-yellow">Coming Soon</strong>
-                    <strong class="text-light-70">Public-sale: 19 Dec 2022</strong>
-                </div>
-                <button type="button" class="price_line">
-                    <custom-svg src="/images/icons/price_icon.svg" width="12" height="20" alt=""></custom-svg>
-                    0.05 ETHERIUM
-                </button>
-            </div>
+            <?php include("../includes/featured_nft_card_slider.php") ?>
         </div>
     </section>
 
@@ -60,8 +44,80 @@
     $is_large = true;
     $btn_title = "Submit Project";
     $heading = "Are you a project founder? Do you want to get listed?";
-    $backgrand_image = "/images/stars_interact_card.png";
+    $backgrand_image = "/images/interact_card_stars_large.svg";
     include("../includes/interaction_card.php") ?>
+
+    <div class="projects_page browse_by_category_section">
+        <h4 class="heading">Browse by category</h4>
+        <div class="categories_list">
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Metaverse</button>
+            <button type="button" class="category_btn">PFP</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+            <button type="button" class="category_btn">Free Mint</button>
+        </div>
+    </div>
+
+
+    <section class="mt-90">
+        <?php $heading = "Most Popular";
+        $btn_title = "View All";
+        include("../includes/nft_projects_grid_component.php") ?>
+    </section>
+
+    <section class="mt-90 mb-80">
+        <?php $heading = "Upcoming";
+        $btn_title = "View All";
+        include("../includes/nft_projects_grid_component.php") ?>
+    </section>
+
+    <?php
+    $is_large = true;
+    $btn_title = "Learn More";
+    $heading = "Founders: Sellout Your Project";
+    $backgrand_image = "/images/interact_card_large.svg";
+    include("../includes/interaction_card.php") ?>
+
+    <section class="mt-90 mb-90">
+        <?php $heading = "Veerified";
+        $btn_title = "View All";
+        include("../includes/nft_projects_grid_component.php") ?>
+    </section>
+
+    <?php
+    $is_large = true;
+    $btn_title = "Submit Project";
+    $heading = "Are you a project founder? Do you want to get listed?";
+    $backgrand_image = "/images/interact_card_stars_large.svg";
+    include("../includes/interaction_card.php") ?>
+
+    <section class="projects_page latest_news_section">
+        <h3 class="heading">Latest News</h3>
+        <div class="news_list">
+            <div class="news_item">
+                <img src="/images/nft_2.png" width="300" height="300" alt="">
+                <h4 class="sm title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h4>
+            </div>
+            <div class="news_item">
+                <img src="/images/nft_2.png" width="300" height="300" alt="">
+                <h4 class="sm title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h4>
+            </div>
+            <div class="news_item">
+                <img src="/images/nft_2.png" width="300" height="300" alt="">
+                <h4 class="sm title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h4>
+            </div>
+            <div class="news_item">
+                <img src="/images/nft_2.png" width="300" height="300" alt="">
+                <h4 class="sm title">Ut enim ad minim veniam, quis nostrud exercitation ullamco</h4>
+            </div>
+        </div>
+    </section>
+
 
     <?php include("../includes/join_news_letter_component.php") ?>
     <?php include("../includes/footer.php") ?>
