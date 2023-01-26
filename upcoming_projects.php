@@ -58,7 +58,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -80,7 +80,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -101,7 +101,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -123,7 +123,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -144,7 +144,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -166,7 +166,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -187,7 +187,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -209,7 +209,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -230,7 +230,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -252,7 +252,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -273,7 +273,7 @@
                                 <strong class="time text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="/images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">
@@ -295,7 +295,7 @@
                                 <strong class="time lg text-yellow text-600">Minting Now</strong>
                                 <div class="account">
                                     <h4 class=" sm title text-600">xHamsterNFT</h4>
-                                    <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                                    <img src="/images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                                 </div>
                             </div>
                             <div class="lower">

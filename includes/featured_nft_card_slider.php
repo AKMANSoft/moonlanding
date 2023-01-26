@@ -7,8 +7,8 @@
                 <div class="nft_info">
                     <div class="account">
                         <h4 class="title">Cat Fight P2E NFT</h4>
-                        <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
-                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verification_badge">
+                        <img src="/images/icons/verified_icon.svg" width="20" height="20" alt="" class="verified_icon">
+                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verified_icon">
                     </div>
                     <strong class="text-yellow">Coming Soon</strong>
                     <strong class="text-light-70">Public-sale: 19 Dec 2022</strong>
@@ -24,8 +24,8 @@
                 <div class="nft_info">
                     <div class="account">
                         <h4 class="title">Cat Fight P2E NFT</h4>
-                        <img src="/images/icons/verification_badge.svg" width="20" height="20" alt="" class="verification_badge">
-                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verification_badge">
+                        <img src="/images/icons/verified_icon.svg" width="20" height="20" alt="" class="verified_icon">
+                        <img src="/images/icons/kyc_icon.svg" width="20" height="20" alt="" class="verified_icon">
                     </div>
                     <strong class="text-yellow">Coming Soon</strong>
                     <strong class="text-light-70">Public-sale: 19 Dec 2022</strong>

@@ -192,7 +192,7 @@
                         <strong class="time lg text-light-70 text-600">Future</strong>
                         <div class="account">
                             <h4 class="title text-600">xHamsterNFT</h4>
-                            <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                            <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                         </div>
                         <p class="sale_date lg">Public-sale: 19 Dec 2022</p>
                         <div class="price_line">
@@ -210,7 +210,7 @@
                         <strong class="time lg text-light-70 text-600">Future</strong>
                         <div class="account">
                             <h4 class="title text-600">xHamsterNFT</h4>
-                            <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                            <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                         </div>
                         <p class="sale_date lg">Public-sale: 19 Dec 2022</p>
                         <div class="price_line">
@@ -228,7 +228,7 @@
                         <strong class="time lg text-light-70 text-600">Future</strong>
                         <div class="account">
                             <h4 class="title text-600">xHamsterNFT</h4>
-                            <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                            <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                         </div>
                         <p class="sale_date lg">Public-sale: 19 Dec 2022</p>
                         <div class="price_line">
@@ -246,7 +246,7 @@
                         <strong class="time lg text-light-70 text-600">Future</strong>
                         <div class="account">
                             <h4 class="title text-600">xHamsterNFT</h4>
-                            <img src="./images/icons/verification_badge.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
+                            <img src="./images/icons/verified_icon.svg" width="20" height="20" alt="Account Verification Badge" class="verfication_badge">
                         </div>
                         <p class="sale_date lg">Public-sale: 19 Dec 2022</p>
                         <div class="price_line">
