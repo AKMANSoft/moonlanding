@@ -10,9 +10,9 @@
 </head>
 
 <body>
-<?php 
+    <?php
     $news_header = true;
-    $primary_btn_title="Marketing Support"; 
+    $primary_btn_title = "Marketing Support";
     include("./includes/header.php") ?>
 
     <section class="news_page home_section">
@@ -67,7 +67,11 @@
             </div>
         </div>
     </section>
-    <?php $backgrand_image = "./images/interact_card.png";
+    <?php
+    $is_large = false;
+    $btn_title = "Submit Project";
+    $heading = "Founders: Sellout Your Project";
+    $backgrand_image = "/images/interact_card.png";
     include("./includes/interaction_card.php") ?>
 
     <section class="news_page latest_news_section">

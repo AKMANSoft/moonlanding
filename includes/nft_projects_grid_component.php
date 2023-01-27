@@ -1,10 +1,9 @@
 <div class="nft_projects_grid_component">
     <div class="head">
         <h3 class="heading"><?php echo $heading ?></h3>
-        <a href="#" class="btn dark">
-            <?php echo $btn_title ?>
-            <i class="bi bi-chevron-right normal"></i>
-        </a>
+        <?php echo strlen($btn_title) > 0
+            ? "<a href='#' class='btn dark'>$btn_title <i class='bi bi-chevron-right normal'></i> </a>"
+            : ""  ?>
     </div>
     <div class="nft_projects_list row_view">
         <div class="nft_project">

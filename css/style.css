@@ -37,6 +37,70 @@ body {
 }
 
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row.wrap {
+    flex-wrap: wrap;
+}
+
+
+.col-gap-20 {
+    column-gap: 20px;
+}
+
+.col-gap-30 {
+    column-gap: 30px;
+}
+
+.col-gap-25 {
+    column-gap: 25px;
+}
+
+.col-gap-35 {
+    column-gap: 35px;
+}
+
+.col-gap-10 {
+    column-gap: 10px;
+}
+
+.col-gap-15 {
+    column-gap: 15px;
+}
+.col-gap-5 {
+    column-gap: 5px;
+}
+
+
+.row-gap-20 {
+    row-gap: 20px;
+}
+
+.row-gap-30 {
+    row-gap: 30px;
+}
+
+.row-gap-25 {
+    row-gap: 25px;
+}
+
+.row-gap-35 {
+    row-gap: 35px;
+}
+
+.row-gap-10 {
+    row-gap: 10px;
+}
+
+.row-gap-15 {
+    row-gap: 15px;
+}
+.row-gap-5 {
+    row-gap: 5px;
+}
 
 
 @media screen and (max-width:1400px) {
@@ -96,6 +160,15 @@ body {
     transition: all .4s ease;
     cursor: pointer;
     user-select: none;
+}
+
+
+.btn.p-40 {
+    padding: 0 40px;
+}
+
+.btn.p-50 {
+    padding: 0 50px;
 }
 
 .btn.small {
@@ -162,7 +235,7 @@ body {
 /* Header Style Start  */
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0 var(--max-hor-padding);
@@ -173,6 +246,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    background-color: #110907;
 }
 
 
@@ -911,9 +985,9 @@ footer .bottom_section .social_icons {
 }
 
 .nft_projects_grid_component .head .heading {
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 800;
+    /* font-size: 36px; */
+    /* line-height: 1.2; */
+    /* font-weight: 800; */
 }
 
 
@@ -1115,36 +1189,10 @@ footer .bottom_section .social_icons {
 
 /* Typograpgy Style Start  */
 
-.text-primary {
-    color: var(--primary);
+
+.text-prewrap {
+    white-space: pre-wrap;
 }
-
-.text-dark {
-    color: var(--dark);
-}
-
-.text-light {
-    color: var(--light);
-}
-
-.text-light-70 {
-    color: var(--light-70);
-}
-
-
-.text-yellow {
-    color: #F2C94C;
-}
-
-.text-green {
-    color: #6FCF97;
-}
-
-
-.text-blue {
-    color: #56CCF2;
-}
-
 
 
 
@@ -1166,6 +1214,7 @@ input::placeholder {
 a {
     text-decoration: none;
     outline: none;
+    color: var(--light);
 }
 
 
@@ -1183,7 +1232,7 @@ h1 {
 h3 {
     font-size: 36px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: 0em;
     text-align: left;
     color: var(--light);
@@ -1229,12 +1278,20 @@ p {
     line-height: 1.5;
     letter-spacing: 0em;
     text-align: left;
+    color: var(--light-70);
 }
 
 .p.sm,
 strong.sm,
 p.sm {
     font-size: 14px;
+    line-height: 26px;
+}
+
+.p.lg,
+strong.lg,
+p.lg {
+    font-size: 18px;
     line-height: 26px;
 }
 
@@ -1280,6 +1337,12 @@ p>strong {
     strong,
     p {
         font-size: 14px;
+    }
+
+    .p.lg,
+    strong.lg,
+    p.lg {
+        font-size: 16px;
     }
 }
 
@@ -1333,6 +1396,12 @@ p>strong {
         font-size: 16px;
     }
 
+    .p.lg,
+    strong.lg,
+    p.lg {
+        font-size: 18px;
+    }
+
     h3.sm {
         font-size: 26px;
     }
@@ -1350,6 +1419,37 @@ p>strong {
 
 
 
+
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-light-70 {
+    color: var(--light-70);
+}
+
+
+.text-yellow {
+    color: #F2C94C;
+}
+
+.text-green {
+    color: #6FCF97;
+}
+
+
+.text-blue {
+    color: #56CCF2;
+}
 
 
 
@@ -1387,6 +1487,148 @@ i.normal {
 
 
 /* Layout Margins CSS Start */
+
+
+/* Layout Left Margins Start */
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-60 {
+    margin-left: 60px;
+}
+
+.ml-70 {
+    margin-left: 70px;
+}
+
+.ml-80 {
+    margin-left: 80px;
+}
+
+.ml-85 {
+    margin-left: 85px;
+}
+
+.ml-90 {
+    margin-left: 90px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-25 {
+    margin-left: 25px;
+}
+
+.ml-35 {
+    margin-left: 35px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.ml-45 {
+    margin-left: 45px;
+}
+
+.ml-55 {
+    margin-left: 55px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+/* Layout Left Margins End */
+
+
+
+
+
+/* Layout Right Margins Start */
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.mr-70 {
+    margin-right: 70px;
+}
+
+.mr-80 {
+    margin-right: 80px;
+}
+
+.mr-85 {
+    margin-right: 85px;
+}
+
+.mr-90 {
+    margin-right: 90px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-25 {
+    margin-right: 25px;
+}
+
+.mr-35 {
+    margin-right: 35px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-45 {
+    margin-right: 45px;
+}
+
+.mr-55 {
+    margin-right: 55px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+/* Layout Right Margins End */
+
+
+
 
 
 /* Layout Top Margins Start */
@@ -1455,6 +1697,8 @@ i.normal {
 }
 
 /* Layout Top Margins End */
+
+
 
 /* Layout Bottom Margins Start */
 .mb-5 {
@@ -2671,7 +2915,7 @@ i.normal {
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group {
+.input_group {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -2687,7 +2931,7 @@ i.normal {
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group label {
+.input_group label {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -2695,15 +2939,15 @@ i.normal {
     white-space: pre-wrap;
 }
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group label span {
+.input_group label span {
     color: #FC4545;
 }
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group select,
-.submit_project_page.home_section .content .input_sections .input_section .input_group file-input,
-.submit_project_page.home_section .content .input_sections .input_section .input_group textarea,
-.submit_project_page.home_section .content .input_sections .input_section .input_group input {
+.input_group select,
+.input_group file-input,
+.input_group textarea,
+.input_group input {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     padding: 10px 16px;
@@ -2722,18 +2966,18 @@ i.normal {
 }
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group select {
+.input_group select {
     appearance: none;
 }
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group select option {
+.input_group select option {
     background: #110907;
 }
 
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group file-input {
+.input_group file-input {
     height: 162px;
     cursor: pointer;
     display: flex;
@@ -2746,7 +2990,7 @@ i.normal {
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group .expand_icon {
+.input_group .expand_icon {
     position: absolute;
     bottom: 0;
     right: 16px;
@@ -2755,7 +2999,7 @@ i.normal {
     line-height: 46px;
 }
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group .text_right {
+.input_group .text_right {
     position: absolute;
     bottom: 3px;
     right: 10px;
@@ -2770,23 +3014,23 @@ i.normal {
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group input.pad-right {
+.input_group input.pad-right {
     padding-right: 50px;
 }
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group textarea:focus,
-.submit_project_page.home_section .content .input_sections .input_section .input_group input:focus {
+.input_group textarea:focus,
+.input_group input:focus {
     border-color: rgba(255, 255, 255, 0.7);
 }
 
 
 
-.submit_project_page.home_section .content .input_sections .input_section .input_group select,
-.submit_project_page.home_section .content .input_sections .input_section .input_group file-input,
-.submit_project_page.home_section .content .input_sections .input_section .input_group input::placeholder,
-.submit_project_page.home_section .content .input_sections .input_section .input_group input {
+.input_group select,
+.input_group file-input,
+.input_group input::placeholder,
+.input_group input {
     color: rgba(255, 255, 255, 0.4);
     font-weight: 400;
     font-size: 14px;
@@ -2821,3 +3065,296 @@ i.normal {
 
 
 /* Submit Project Page Style End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Detail Page Style Start */
+
+.project_detail_page.home_section {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0 var(--max-hor-padding);
+    padding-top: 80px;
+    padding-bottom: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project_detail_page.home_section .project_banner_image {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+}
+
+
+.project_detail_page.home_section .content {
+    max-width: 1100px;
+    width: 100%;
+}
+
+
+
+.project_detail_page.home_section .content .project_info {
+    margin-top: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.project_detail_page.home_section .content .project_info>img {
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    aspect-ratio: 1;
+}
+
+
+.project_detail_page.home_section .content .project_info .details {
+    padding-top: 50px;
+}
+
+
+.project_detail_page.home_section .content .project_info .details .title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    row-gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.project_detail_page.home_section .content .project_info .details .other_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+
+.project_detail_page.home_section .content .project_info .details .other_info button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+    text-transform: uppercase;
+    gap: 13px;
+    background-color: var(--light);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.project_detail_page.home_section .content .project_info .details .other_info button svg path {
+    fill: var(--dark);
+}
+
+.project_detail_page.home_section .content .project_info .details .other_info button.total_supply {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--light);
+}
+
+
+
+.project_detail_page.home_section .content .project_info .details .other_info .divider {
+    height: 40px;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+
+
+.project_detail_page.home_section .content .sale_info {
+    width: 100%;
+    display: flex;
+    margin: 60px 0;
+    padding: 74px 0;
+    justify-content: space-between;
+    position: relative;
+    column-gap: 20px;
+    row-gap: 50px;
+    /* flex-wrap: wrap; */
+}
+
+
+.project_detail_page.home_section .content .sale_info::after {
+    content: "";
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: calc(((100vw - 100%) / 2) * -1);
+    height: 100%;
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.2;
+}
+
+
+
+
+
+@media (max-width:767px) {
+    .project_detail_page.home_section .content .project_info {
+        flex-direction: column;
+        gap: 50px;
+        justify-content: flex-start;
+    }
+
+    .project_detail_page.home_section .content .project_info .details {
+        padding-top: 0;
+    }
+
+    .project_detail_page.home_section .content .project_info .details .other_info {
+        flex-wrap: wrap;
+    }
+
+
+    .project_detail_page.home_section .content .project_info .details .other_info .divider {
+        display: none;
+    }
+
+
+    .project_detail_page.home_section .content .sale_info {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+.project_detail_page.home_section .content .event_info {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 70px;
+}
+
+
+
+.project_detail_page.home_section .content .event_info .head {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+
+
+.project_detail_page.home_section .content .event_info .event_details {
+    width: 100%;
+}
+
+
+.project_detail_page.home_section .content .event_info .event_details .detail_blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+.project_detail_page.home_section .content .event_info .event_details .detail_block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+
+
+.project_detail_page.home_section .content .event_info .event_details .detail_block>p:first-child {
+    min-width: 120px;
+}
+
+
+
+
+
+
+.project_detail_page.home_section .content .event_info .register_for_event {
+    min-width: 315px;
+}
+
+
+
+.project_detail_page.home_section .content .event_info .register_for_event .register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .project_detail_page.home_section .content .event_info .event_details .detail_block>p:first-child {
+        min-width: 100px;
+    }
+
+    .project_detail_page.home_section .content .event_info .register_for_event {
+        min-width: 250px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .project_detail_page.home_section .content .event_info {
+        flex-direction: column;
+    }
+
+    .project_detail_page.home_section .content .event_info .event_details {
+        width: 100%;
+    }
+
+    .project_detail_page.home_section .content .event_info .register_for_event {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+/* Project Detail Page Style End */
