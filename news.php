@@ -64,12 +64,19 @@
             </div>
         </div>
     </section>
-    <?php
-    $is_large = false;
-    $btn_title = "Submit Project";
-    $heading = "Founders: Sellout Your Project";
-    $backgrand_image = "/images/interact_card.png";
-    include("./includes/interaction_card.php") ?>
+
+    <div class="interaction_card">
+        <div class="wrapper">
+            <div class="inner" style="background-image: url(/images/interact_card.png);">
+                <h4 class='heading'>Founders: Sellout Your Project</h4>
+                <a href="#" class="btn small light">
+                    Submit Project
+                    <i class="bi bi-chevron-right normal"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <section class="news_page latest_news_section">
         <div class="content">
@@ -118,8 +125,20 @@
                     </div>
                 </div>
 
-                <?php $backgrand_image = "./images/stars_interact_card.png";
-                include("./includes/interaction_card.php") ?>
+
+                <div class="interaction_card">
+                    <div class="wrapper">
+                        <div class="inner" style="background-image: url(/images/stars_interact_card.png);">
+                            <h4 class='heading sm'>Founders: Sellout Your Project</h4>
+                            <a href="#" class="btn small light">
+                                Submit Project
+                                <i class="bi bi-chevron-right normal"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="news_item">
                     <a href="#">
                         <img src="./images/nft_1.png" width="250" height="250" alt="">
