@@ -1,54 +1,80 @@
-<header>
-    <div class="header_left">
-        <a href="/">
-            <img src="../images/logo.svg" height="60" width="140" alt="" class="logo">
+<header id="masthead" class="site-header" role="banner">
+    <nav id="site-navigation" class="main-navigation menu_exanded" role="navigation">
+        <a href="/" class="logo_container">
+            <img src="/images/logo.svg" height="60" alt="Logo Image" class="logo_img">
         </a>
-    </div>
-    <div id="header_menu_container"  class="header_right">
-        <button type="button" id="header_menu_close_btn" class="menu_close_btn"><i class="bi bi-x"></i></button>
-        <div id="header_nav_menu" class="header_menu">
-            <ul class="nav_links">
-                <?php echo $news_header ? "" : "<li class='nav_item'>
-                    <a href='/' class='nav_link'>Home</a>
-                    </li>
-                    <li class='nav_item'>
-                        <a href='#' class='nav_link'>Marketing Support</a>
-                    </li>"
-                ?>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        News <i class="bi bi-chevron-right normal"></i>
+        <div class="menu-main-menu-container">
+            <a href="#" id="header_menu_close_btn" class="header_menu_close_btn">
+                <span class="icon bi bi-x-lg normal"></span>
+            </a>
+            <ul id="menu-main-menu" class="menu">
+                <li class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item">
+                    <a href="/" aria-current="page">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                    <a href="#">Marketing Support</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                    <a href="#">
+                        News
+                        <i class="bi bi-chevron-right normal" aria-hidden="true"></i>
                     </a>
-                    <ul class='sub_menu'>
-                        <li class='nav_item'><a href='/news.php' class='nav_link'>News</a></li>
-                        <li class='nav_item'><a href='/news.php' class='nav_link'>News</a></li>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">News 1</a>
+                        </li>
                     </ul>
                 </li>
-                <?php echo $news_header ? "" :
-                    "<li class='nav_item'>
-                    <a href='#' class='nav_link'>
-                        Calendar <i class='bi bi-chevron-right normal'></i>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
+                    <a href="#">
+                        Calendar
+                        <i class="bi bi-chevron-right normal" aria-hidden="true"></i>
                     </a>
-                    <ul class='sub_menu'>
-                        <li class='nav_item'><a href='#' class='nav_link'>Future</a></li>
-                        <li class='nav_item'><a href='#' class='nav_link'>This Week</a></li>
-                        <li class='nav_item'><a href='#' class='nav_link'>Today</a></li>
-                        <li class='nav_item'><a href='#' class='nav_link'>Minting Now</a></li>
-                        <li class='nav_item'><a href='#' class='nav_link'>Finished</a></li>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">Future</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">This Week</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">Today</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">Minting Now</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                            <a href="#">Finished</a>
+                        </li>
                     </ul>
-                </li>" ?>
+                </li>
             </ul>
         </div>
-        <div class="search_bar_container expanded">
-            <button type="button" id="search_bar_expand_btn" class="search_bar_expand_btn"><i class="normal bi bi-search"></i></button>
-            <input type="text" class="search_bar" placeholder="Project name, type">
-            <button type="button" class="search_btn btn dark">Search</button>
+        <div class="header_right_section">
+            <div id="search_view_tab" class="search_view_tab">
+                <a href="#" id="search_view_close_btn" class="search_view_close_btn">
+                    <span class="icon bi bi-x-lg normal"></span>
+                </a>
+                <form role="search" method="get" class="search-form" action="#">
+                    <div class="search_bar_container">
+                        <input type="search" class="search-field" placeholder="Project name, type" value="" name="s" title="Search for:'">
+                        <input type="submit" value="Search" class="btn dark">
+                    </div>
+                </form>
+            </div>
+            <div class="menu_btns">
+                <a href="#" id="menu-hamburger" class="menu-hamburger">
+                    <span class="icon bi bi-list bold"></span>
+                </a>
+                <a href="#" id="search_bar_expand_btn" class="search_bar_expand_btn">
+                    <span class="icon bi bi-search"></span>
+                </a>
+            </div>
+            <a href="#" class="btn primary header_primary_btn">
+                Submit Project
+                <i class="bi bi-chevron-right medium" aria-hidden="true"></i>
+            </a>
         </div>
-        <a href="#" class="btn primary primary_btn">
-            <?php echo $primary_btn_title ?>
-            <i class="bi bi-chevron-right normal"></i>
-        </a>
-    </div>
-    <button type="button" id="header_menu_expand_btn" class="header_menu_btn"><i class="bi bi-list"></i></button>
+    </nav>
 </header>
 <script src="/scripts/components/header.js"></script>

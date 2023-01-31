@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include("./includes/new_header.php") ?>
+    <?php include("./includes/header.php") ?>
 
     <section class="news_page home_section">
         <div class="nft_news_list row_view">
