@@ -10,10 +10,7 @@
 </head>
 
 <body>
-    <?php
-    $news_header = true;
-    $primary_btn_title = "Marketing Support";
-    include("./includes/header.php") ?>
+    <?php include("./includes/new_header.php") ?>
 
     <section class="news_page home_section">
         <div class="nft_news_list row_view">

@@ -1,20 +1,299 @@
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0 var(--max-hor-padding);
     width: 100%;
     height: 70px;
     display: flex;
+    align-items: center;
+    z-index: 10;
+    background-color: #110907;
+}
+
+
+header nav {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
-    padding-top: 10px;
+}
+
+
+header nav .menu-main-menu-container .menu {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+header nav .menu .menu-item {
+    list-style: none;
+    display: block;
+    transition: all .3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 
 
+
+
+header nav .menu .menu-item>a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light);
+    min-width: max-content;
+}
+
+header nav .menu .menu-item>a>i {
+    line-height: 15px;
+    font-size: 10px;
+    margin-left: 6px;
+}
+
+
+
+
+
+/* header nav .menu-main-menu-container .menu .current-page-item>a, */
+/* header nav .menu-main-menu-container .menu .current-menu-item>a, */
+header nav .menu-main-menu-container .menu .menu-item:hover>a {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+header nav .menu .menu-item .sub-menu {
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    background-color: #110907;
+    display: none;
+    flex-direction: column;
+    width: max-content;
+    min-width: 100%;
+}
+
+
+header nav .menu .sub-menu .menu-item {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+
+header nav .menu .sub-menu .menu-item>a {
+    line-height: 40px;
+    width: 100%;
+}
+
+
+
+
+header nav .menu-main-menu-container .menu .menu-item:hover>.sub-menu {
+    display: flex;
+}
+
+
+
+
+header nav .header_right_section {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+header nav .menu_btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: none;
+}
+
+
+header nav a.search_bar_expand_btn,
+header nav a.menu-hamburger {
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    display: none;
+}
+
+
+header nav .search_bar_expand_btn>.icon {
+    color: var(--light);
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+header nav .menu-hamburger>.icon {
+    color: var(--primary);
+    font-size: 40px;
+    line-height: 40px;
+}
+
+
+
+
+
+header nav .search_bar_container {
+    display: inline-flex;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    border-radius: 40px;
+    height: 100%;
+}
+
+header nav .search_bar_container .btn {
+    padding: 14px 35px;
+}
+
+
+header nav .search_bar_container .search-field {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 14px 30px;
+    padding-right: 0;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1300px) {
+    header nav .search_bar_container {
+        width: 230px;
+    }
+
+    header nav .search_bar_container .search-field {
+        padding-left: 20px;
+    }
+
+    header nav .search_bar_container .btn {
+        padding: 14px 25px;
+    }
+
+    header nav .menu .menu-item>a {
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1000px) {
+    header nav .search_bar_container {
+        display: none;
+        width: 350px;
+    }
+
+    header nav .menu_btns {
+        display: inline-flex;
+    }
+
+    header nav .menu_btns a.search_bar_expand_btn {
+        display: block;
+    }
+
+    header nav.search_bar_expanded .search_bar_container {
+        display: flex;
+    }
+
+    header nav.search_bar_expanded .menu_btns a.search_bar_expand_btn,
+    header nav.search_bar_expanded .menu-main-menu-container {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    header nav .search_view_tab {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        width: 100%;
+        background-color: #110907;
+        padding-top: 100px;
+    }
+
+    header nav .search_bar_container {
+        height: min-content;
+        width: 80vw;
+        background-color: transparent;
+    }
+
+    header nav .search_bar_container .search-field {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    header nav .search_bar_container .search-field::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+
+    header nav .search_bar_container .btn {
+        display: none;
+
+    }
+
+
+
+
+    header nav .menu-main-menu-container {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* 
 header .header_right {
     display: flex;
     flex-direction: row;
@@ -22,6 +301,8 @@ header .header_right {
     gap: 10px;
     height: 100%;
 }
+
+
 
 
 header .header_right .header_menu {
@@ -40,6 +321,16 @@ header .header_right .header_menu .nav_links>li.nav_item {
     list-style: none;
     position: relative;
     width: 100%;
+    height: auto;
+}
+
+
+@media (min-width:768px) {
+
+    header .header_right .header_menu .nav_links .nav_item .sub_menu>li.nav_item,
+    header .header_right .header_menu .nav_links>li.nav_item {
+        height: 100%;
+    }
 }
 
 
@@ -49,7 +340,7 @@ header .header_right .header_menu .nav_links .nav_item a.nav_link {
     width: max-content;
     outline: none;
     border: none;
-    height: min-content;
+    height: 100%;
     color: var(--light);
     display: inline-flex;
     align-items: center;
@@ -59,7 +350,7 @@ header .header_right .header_menu .nav_links .nav_item a.nav_link {
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
-    padding: 18px;
+    padding: 0 10px;
     transition: all .3s ease;
 }
 
@@ -162,6 +453,8 @@ header .header_right .search_bar_container .search_btn {
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.3);
+    min-height: 0;
+    height: 100%;
 }
 
 
@@ -218,7 +511,7 @@ header .header_right .search_bar_container .search_bar_expand_btn {
     }
 
     header .header_right .header_menu .nav_links .nav_item>a.nav_link {
-        padding: 18px 12px;
+        padding: 0 8px;
     }
 }
 
@@ -266,6 +559,7 @@ header .header_right .search_bar_container .search_bar_expand_btn {
     header .header_right .header_menu .nav_links .nav_item a.nav_link {
         width: 100%;
         justify-content: space-between;
+        height: 50px;
     }
 
 
@@ -303,4 +597,4 @@ header .header_right .search_bar_container .search_bar_expand_btn {
     header>.header_menu_btn {
         display: block;
     }
-}
+} */
