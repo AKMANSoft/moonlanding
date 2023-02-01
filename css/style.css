@@ -805,6 +805,7 @@ footer .disclaimer {
     .interaction_card .inner {
         flex-direction: column;
         gap: 20px;
+        min-height: 200px;
         background-position-x: -80px;
     }
 
