@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="news_page">
     <?php include("./includes/header.php") ?>
 
     <section class="news_page home_section">
